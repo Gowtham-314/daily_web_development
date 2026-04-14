@@ -4,16 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Web Page</title>
-    <link rel="stylesheet" href="sample-web-page.css">
+    <style>
+        .page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #ebba7a;
+        }
+        .h1ero {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .top {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            border: 1px solid #ccc;
+        }
+        .table th,
+        .table td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
     <main class="page">
         <header class="hero">
-            <h1>Sample Web Page</h1>
-            <p class="subtitle">A clean and proper HTML + CSS starter layout.</p>
+            <top><h1 style="text-align: center; color: black; top: 0;">Sample Web Page</h1>
+            <p class="subtitle">A clean and proper HTML + CSS starter layout.</p></top> 
         </header>
+        <script>
+            // JavaScript code can be added here if needed
+            console.log("Hello World!");
 
-        <section class="content-card">
+        </script>
+
+        <section class="content-card" style="align-content: left;">
             <h2>Welcome</h2>
             <p>Hello World</p>
             <p>This page uses semantic HTML, external CSS, and responsive styling.</p>
@@ -23,6 +57,32 @@
                 <button type="button">World</button>
             </div>
         </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>30</td>
+                    <td>Bengaluru</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>25</td>
+                    <td>Mysuru</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>35</td>
+                    <td>kanakpura</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 </body>
 </html>
