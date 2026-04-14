@@ -34,13 +34,37 @@
         p,h2,table,div{ 
             text-indent: 25px; 
         }
+        .container {
+            display: flex;
+            align-items: center; /* Vertically centers the text next to the image */
+            justify-content: center; /* Horizontally centers the text and image */
+            gap: 20px;           /* Adds space between the image and text */
+            margin-top: 20px;    /* Adds some space above the container */
+        }
+
+        .left-img {
+            float: left;
+            margin-left: 15px;
+            right: 15px;
+             width: 200px; /* Optional: sets a fixed size for the image */
+                }
+
+
     </style>
 
 </head>
 <body>
-    <img src="Acharyalogo.jpg" alt="Acharya Logo" style="display: block; margin: 0 auto; width: 150px; height: auto;">
+    <div class="container">
+    <img src="Acharyalogo.jpg" alt="Acharya Logo" style="display: block; margin: 0 auto; width: 150px; height: auto;"  class="left-img">
+  <div class="text">
     <h1 style="text-align: center; color: black; top: 0;">AIML Time Table</h1>
     <p style="text-align: center;" class="subtitle">Present Time Table of AIML Course</p>
+  </div>
+    </div>
+
+
+
+
     <table class="table">
         <thead>
             <tr>
