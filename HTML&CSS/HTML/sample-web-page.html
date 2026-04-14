@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Web Page</title>
-    <style>
-        .page {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #ebba7a;
+    <style>        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8bc65;
         }
         .h1ero {
             text-align: center;
@@ -33,13 +31,33 @@
             padding: 0.5rem;
             text-align: left;
         }
+
+        p,h2,table,div{ 
+            text-indent: 25px; 
+        }
+
+        .bottom {
+            text-align: center;
+            margin-top: 2rem;
+
+        }
+        .bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+}
+
+
     </style>
 </head>
 <body>
     <main class="page">
         <header class="hero">
             <top><h1 style="text-align: center; color: black; top: 0;">Sample Web Page</h1>
-            <p class="subtitle">A clean and proper HTML + CSS starter layout.</p></top> 
+            <p style="text-align: center;" class="subtitle">A clean and proper HTML + CSS starter layout.</p></top> 
         </header>
         <script>
             // JavaScript code can be added here if needed
@@ -57,6 +75,7 @@
                 <button type="button">World</button>
             </div>
         </section>
+        <br>
         <table>
             <thead>
                 <tr>
@@ -84,5 +103,10 @@
             </tbody>
         </table>
     </main>
+    <bottom>
+    <footer class="footer">
+        <p>&copy; 2026 Sample Web Page. All rights reserved.</p>
+    </footer>
+    </bottom>
 </body>
 </html>
