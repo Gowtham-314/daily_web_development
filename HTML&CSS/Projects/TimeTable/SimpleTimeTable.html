@@ -1,107 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIML Time Table</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #dfc1f9;
-        }
-        .h1ero {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .top {
-            font-size: 1.5rem;
-            color: #333;
-        }
-        .table {
-            width: 80%;
-            border-collapse: collapse;
-            margin-top: 2rem;
-            border: 1px solid #ccc;
-        }
-        .tr, .table th,
-        .table td {
-            border: 1px solid #f0e5e5;
-            padding: 0.5rem;
-            text-align: left;
-        }
-        p,h2,table,div{ 
-            text-indent: 25px; 
-        }
-        .container {
-            display: flex;
-            align-items: center; /* Vertically centers the text next to the image */
-            justify-content: center; /* Horizontally centers the text and image */
-            gap: 20px;           /* Adds space between the image and text */
-            margin-top: 20px;    /* Adds some space above the container */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIML Time Table</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #ffffff;
+    }
 
-        .left-img {
-            float: left;
-            margin-left: 15px;
-            right: 15px;
-             width: 200px; /* Optional: sets a fixed size for the image */
-                }
+    .table-wrap {
+      padding: 4px;
+    }
 
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      background: #ffffff;
+    }
 
-    </style>
+    .table th,
+    .table td {
+      border: 4px solid #111;
+      text-align: center;
+      vertical-align: middle;
+      padding: 8px 6px;
+      font-size: 24px;
+      font-weight: 700;
+    }
 
+    .table th {
+      background: #fff;
+    }
+
+    .day-col {
+      width: 8%;
+    }
+
+    .time-col {
+      width: 10%;
+    }
+
+    .break-cell {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      letter-spacing: 2px;
+      font-size: 26px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-    <img src="Acharyalogo.jpg" alt="Acharya Logo" style="display: block; margin: 0 auto; width: 150px; height: auto;"  class="left-img">
-  <div class="text">
-    <h1 style="text-align: center; color: black; top: 0;">AIML Time Table</h1>
-    <p style="text-align: center;" class="subtitle">Present Time Table of AIML Course</p>
-  </div>
-    </div>
-
-
-
-
+  <div class="table-wrap">
     <table class="table">
-        <thead>
-            <tr>
-                <th>Day</th>
-                <th>TimeTime</th>
-                <th>Subject</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Monday</td>
-                <td></td>
-                <td>Introduction to AI</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>11:00 AM - 12:30 PM</td>
-                <td>Machine Learning Basics</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>2:00 PM - 3:30 PM</td>
-                <td>Deep Learning Fundamentals</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>4:00 PM - 5:30 PM</td>
-                <td>Natural Language Processing</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>10:00 AM - 11:30 AM</td>
-                <td>AI Ethics and Society</td>
-            </tr>
-
-
+      <thead>
+        <tr>
+          <th class="day-col">DAY/TIME</th>
+          <th class="time-col">08:45-09:40</th>
+          <th class="time-col">09:40-10:35</th>
+          <th class="time-col">10:35-10:50</th>
+          <th class="time-col">10:50-11:45</th>
+          <th class="time-col">11:45-12:40</th>
+          <th class="time-col">12:40 PM To 01:40 PM</th>
+          <th class="time-col">01:40-02:35</th>
+          <th class="time-col">02:35-03:30</th>
+          <th class="time-col">03:30-04:25</th>
+          <th class="time-col">04:25-05:20</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MON</td>
+          <td>MAT</td>
+          <td>PHY</td>
+          <td class="break-cell" rowspan="5">TEA BREAK</td>
+          <td>CADD - TH</td>
+          <td>CADD - TH</td>
+          <td class="break-cell" rowspan="5">LUNCH BREAK</td>
+          <td>PHYL</td>
+          <td>PHYL</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>TUE</td>
+          <td>KBK</td>
+          <td>MAT</td>
+          <td>Soft Skill</td>
+          <td>Soft Skill</td>
+          <td>CADD - LAB</td>
+          <td>CADD - LAB</td>
+          <td>CADD - LAB</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>WED</td>
+          <td>IEC</td>
+          <td>MAT</td>
+          <td>PHY</td>
+          <td>POP</td>
+          <td>PRJ258</td>
+          <td>PRJ258</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>THU</td>
+          <td>IEC</td>
+          <td>PHY</td>
+          <td>POP</td>
+          <td>MAT</td>
+          <td>POP-LAB</td>
+          <td>POP-LAB</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>FRI</td>
+          <td>SKS</td>
+          <td>IEC</td>
+          <td>MAT</td>
+          <td>MAT</td>
+          <td>PHY</td>
+          <td>POP</td>
+          <td>KSK</td>
+          <td>0</td>
+        </tr>
+      </tbody>
     </table>
-    
+  </div>
 </body>
 </html>
