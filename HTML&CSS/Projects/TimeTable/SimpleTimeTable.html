@@ -1,102 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AIML Time Table</title>
-  <style>
-    body {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIML Time Table</title>
+    <style>
+body {
       margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: #ffffff;
+      font-family: Arial, sans-serif;
+      background-color: #a7f8ca;
     }
 
-    .table-wrap {
-      padding: 4px;
+    .container {
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(173, 247, 217);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+      color: black;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #555;
+      font-size: 16px;
     }
 
     .table {
-      width: 100%;
+      width: 80%;
+      margin: 20px auto;
       border-collapse: collapse;
-      table-layout: fixed;
-      background: #ffffff;
+      background-color: rgb(189, 225, 176);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
     .table th,
     .table td {
-      border: 4px solid #111;
-      text-align: center;
-      vertical-align: middle;
-      padding: 8px 6px;
-      font-size: 24px;
-      font-weight: 700;
+      padding: 10px;
+      text-align: Center;
+      border-bottom: 1px solid #141212;
     }
 
     .table th {
-      background: #fff;
+        background-color: #4CAF50;
+        color: rgb(28, 19, 19);
+        }
+
+    .id_color {
+        background-color: #a1dca3;
+        color: rgb(28, 19, 19);
     }
 
-    .day-col {
-      width: 8%;
-    }
+    </style>
 
-    .time-col {
-      width: 10%;
-    }
-
-    .break-cell {
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
-      letter-spacing: 2px;
-      font-size: 26px;
-    }
-  </style>
 </head>
 <body>
-  <div class="table-wrap">
+      <div class="container">
+    <img src="Acharyalogo.jpg" alt="Acharya Logo" class="logo">
+
+    <h1>AIML Time Table</h1>
+    <p class="subtitle">Present Time Table of AIML Course</p>
+  </div>
+
+
+
     <table class="table">
-      <thead>
-        <tr>
-          <th class="day-col">DAY/TIME</th>
-          <th class="time-col">08:45-09:40</th>
-          <th class="time-col">09:40-10:35</th>
-          <th class="time-col">10:35-10:50</th>
-          <th class="time-col">10:50-11:45</th>
-          <th class="time-col">11:45-12:40</th>
-          <th class="time-col">12:40 PM To 01:40 PM</th>
-          <th class="time-col">01:40-02:35</th>
-          <th class="time-col">02:35-03:30</th>
-          <th class="time-col">03:30-04:25</th>
-          <th class="time-col">04:25-05:20</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>MON</td>
-          <td>MAT</td>
-          <td>PHY</td>
-          <td class="break-cell" rowspan="5">TEA BREAK</td>
+        <thead>
+          <tr>
+          <th>DAY/TIME</th>
+          <th>08:45-09:40</th>
+          <th>09:40-10:35</th>
+          <th>10:35-10:50</th>
+          <th>10:50-11:45</th>
+          <th>11:45-12:40</th>
+          <th>12:40 PM To 01:40 PM</th>
+                <th>01:40-02:35</th>
+                <th>02:35-03:30</th>
+                <th>03:30-04:25</th>
+          <th>04:25-05:20</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+          <td class="id_color">MON</td>
+                <td>MAT</td>
+                <td>PHY</td>
+          <td class="id_color" rowspan="5">TEA BREAK</td>
           <td>CADD - TH</td>
           <td>CADD - TH</td>
-          <td class="break-cell" rowspan="5">LUNCH BREAK</td>
-          <td>PHYL</td>
-          <td>PHYL</td>
+          <td class="id_color" rowspan="5">LUNCH BREAK</td>
+                <td>PHYL</td>
+                <td>PHYL</td>
           <td>0</td>
           <td>0</td>
-        </tr>
-        <tr>
-          <td>TUE</td>
+            </tr>
+            <tr>
+          <td class="id_color">TUE</td>
           <td>KBK</td>
           <td>MAT</td>
           <td>Soft Skill</td>
           <td>Soft Skill</td>
           <td>CADD - LAB</td>
           <td>CADD - LAB</td>
-          <td>CADD - LAB</td>
+          <td>CAD - LAB</td>
           <td>0</td>
-        </tr>
-        <tr>
-          <td>WED</td>
+            </tr>
+            <tr>
+          <td class="id_color">WED</td>
           <td>IEC</td>
           <td>MAT</td>
           <td>PHY</td>
@@ -105,9 +124,9 @@
           <td>PRJ258</td>
           <td>0</td>
           <td>0</td>
-        </tr>
-        <tr>
-          <td>THU</td>
+            </tr>
+            <tr>
+          <td class="id_color">THU</td>
           <td>IEC</td>
           <td>PHY</td>
           <td>POP</td>
@@ -116,9 +135,9 @@
           <td>POP-LAB</td>
           <td>0</td>
           <td>0</td>
-        </tr>
-        <tr>
-          <td>FRI</td>
+            </tr>
+            <tr>
+          <td class="id_color">FRI</td>
           <td>SKS</td>
           <td>IEC</td>
           <td>MAT</td>
@@ -127,9 +146,10 @@
           <td>POP</td>
           <td>KSK</td>
           <td>0</td>
-        </tr>
+            </tr>
       </tbody>
+
     </table>
-  </div>
+    
 </body>
 </html>
