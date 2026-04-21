@@ -6,6 +6,14 @@
     <title>Video in HTML</title>
 </head>
 <body>
-    <video controls autoplay muted loop src="asserts\Video.mp4"></video>
+    <video width="250" height="500" controls autoplay muted loop src="asserts\Video.mp4"></video>
+
+
+    <br><hr><br>
+    <!-- The source element is used to specify multiple media resources for the video element. -->
+    <video width="250" height="500" controls autoplay muted loop>
+        <source src="asserts\Video.mp4" type="video/mp4">
+        This browser does not support the video tag.
+    </video>
 </body>
 </html>
