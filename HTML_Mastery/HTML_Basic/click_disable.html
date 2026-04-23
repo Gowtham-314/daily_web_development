@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        How to disable right click on 
+        web page using JavaScript ?
+    </title>
+</head>
+
+<body style="text-align: center;">
+    <h1 style="color:rgb(0, 128, 0);">
+        How to disable right click on 
+        web page using JavaScript ?
+    </h1>
+    <hr>
+
+    <button onclick="Fun_call()">
+        Disable Right Click
+    </button>
+
+    <h3 id="01" style="color:rgb(0, 128, 0);">
+    </h3>
+
+    <script>
+        let elm = document.getElementById("01");
+
+        function Fun_call() {
+            document.addEventListener('contextmenu',
+                event => event.preventDefault());
+
+            elm.innerHTML = "Right click disabled";
+        }
+    </script>
+</body>
+
+</html>
