@@ -28,6 +28,23 @@
         div{
             margin-bottom: 15px;
         }
+        select{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        select {
+            appearance: base-select;
+        }
+
+        option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 16px;
+            color: rgb(150, 121, 247);
+        }
+
     </style>
 </head>
 <body>
@@ -46,6 +63,18 @@
         <div>
             <label for="USN">USN:</label>
             <input type="text" id="USN" name="USN" placeholder="Enter your USN"><br><br>
+        </div>
+        <div>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="AIML">AIML</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+            </select>
+
+
         </div>
         <div>
             <label for="dob">Date of Birth:</label>
@@ -78,6 +107,8 @@
         </div>
         <button type="submit" value="submit">Submit</button>
     </form>
+
+    
     </div>
 </body>
 </html>
