@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms in HTML</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        label{
+            font: 100% Arial, Helvetica, sans-serif;
+            display:flex
+        }
+        button{
+            padding: 10px 20px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
+    <div style="text-align: center; padding: 20px; background-color: lightblue; border: 2px solid black; border-radius: 10px; width: 50%; margin: auto;">
     <h1>Forms in HTML</h1>
     <form>
         <label for="name">First Name:</label>
@@ -20,8 +42,8 @@
         <input type="email" id="email" name="email" placeholder="------@acharya.ac.in"><br><br>
         <label for ="password">Password:</label>
         <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
-        <button id="summit" value="summit">Submit</button>
+        <button type="submit" value="submit">Submit</button>
     </form>
-    
+    </div>
 </body>
 </html>
