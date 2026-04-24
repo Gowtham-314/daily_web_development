@@ -15,7 +15,7 @@
             border-radius: 5px;
         }
         label{
-            font: 100% Arial, Helvetica, sans-serif;
+            font: 100% Verdana, Geneva, Tahoma, sans-serif;
             display:flex
         }
         button{
@@ -29,19 +29,32 @@
 <body>
     <div style="text-align: center; padding: 20px; background-color: lightblue; border: 2px solid black; border-radius: 10px; width: 50%; margin: auto;">
     <h1>Forms in HTML</h1>
-    <form>
-        <label for="name">First Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your first name"><br><br>
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
-        <label for="USN">USN:</label>
-        <input type="text" id="USN" name="USN" placeholder="Enter your USN"><br><br>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="------@acharya.ac.in"><br><br>
-        <label for ="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+    <form action="action_page.php" method="GET">
+        <div>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your first name"><br><br>
+        </div>
+
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+        </div>
+        <div>
+            <label for="USN">USN:</label>
+            <input type="text" id="USN" name="USN" placeholder="Enter your USN"><br><br>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="------@acharya.ac.in"><br><br>
+        </div>
+        <div>
+            <label for ="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+        </div>
         <button type="submit" value="submit">Submit</button>
     </form>
     </div>
