@@ -29,10 +29,10 @@
 <body>
     <div style="text-align: center; padding: 20px; background-color: lightblue; border: 2px solid black; border-radius: 10px; width: 50%; margin: auto;">
     <h1>Forms in HTML</h1>
-    <form action="action_page.php" method="GET">
+    <form action="/submit_form" method="post">
         <div>
             <label for="name">First Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your first name"><br><br>
+            <input type="text" id="name" name="name" placeholder="Enter your first name" required><br><br>
         </div>
 
         <div>
@@ -45,15 +45,15 @@
         </div>
         <div>
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
         </div>
         <div>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="------@acharya.ac.in"><br><br>
+            <input type="email" id="email" name="email" placeholder="------@acharya.ac.in" required><br><br>
         </div>
         <div>
             <label for ="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
         </div>
         <button type="submit" value="submit">Submit</button>
     </form>
