@@ -26,7 +26,7 @@
         }
     </style>
 </head>
-<body>http://127.0.0.1:5500/HTML_Mastery/HTML_Basic/audio.html
+<body>
     <div style="text-align: center; padding: 20px; background-color: lightblue; border: 2px solid black; border-radius: 10px; width: 50%; margin: auto;">
     <h1>Forms in HTML</h1>
     <form action="http://127.0.0.1:5500/HTML_Mastery/HTML_Basic/audio.html" >
@@ -43,13 +43,27 @@
             <label for="USN">USN:</label>
             <input type="text" id="USN" name="USN" placeholder="Enter your USN"><br><br>
         </div>
+        <label for="dob">Date of Birth:</label>
         <div>
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
         </div>
         <div>
+            <label for="gender">Gender:</label>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="------@acharya.ac.in" required><br><br>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX" required><br><br>
         </div>
         <div>
             <label for ="password">Password:</label>
