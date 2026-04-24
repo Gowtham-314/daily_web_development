@@ -26,10 +26,10 @@
         }
     </style>
 </head>
-<body>
+<body>http://127.0.0.1:5500/HTML_Mastery/HTML_Basic/audio.html
     <div style="text-align: center; padding: 20px; background-color: lightblue; border: 2px solid black; border-radius: 10px; width: 50%; margin: auto;">
     <h1>Forms in HTML</h1>
-    <form action="/submit_form" method="post">
+    <form action="http://127.0.0.1:5500/HTML_Mastery/HTML_Basic/audio.html" >
         <div>
             <label for="name">First Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your first name" required><br><br>
@@ -53,7 +53,7 @@
         </div>
         <div>
             <label for ="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+            <input type="password" id="password" name="password" maxlength="10" placeholder="Enter your password" required><br><br>
         </div>
         <button type="submit" value="submit">Submit</button>
     </form>
