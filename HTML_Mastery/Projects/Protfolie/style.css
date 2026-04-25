@@ -1,0 +1,30 @@
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    size: 20px;
+
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:radial-gradient(circle,#72e9bb,#bdd696);
+}
+div {
+    background:linear-gradient(to right,#76cab5,#a7cd8a);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+footer{
+    text-align: center;
+    padding: 1px;
+    background-color: #c3f2ad;
+    color: rgb(0, 0, 0);
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
