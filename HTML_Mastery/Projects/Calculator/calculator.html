@@ -6,8 +6,9 @@
     <title>Calculator in HTML</title>
     <style>
         body{
-            background-color: #acc8a2;
+            background: radial-gradient(circle,rgb(232, 232, 149),rgb(175, 229, 175));
         }
+
         div{
             background-color: #fff;
             padding: 20px;
@@ -49,11 +50,15 @@
             padding: 8px 16px;
             color: rgb(150, 121, 247);
         }
+        label{
+            font: 100% Verdana, Geneva, Tahoma, sans-serif;
+            display:flex
+        }
 
     </style>
 </head>
 <body>
-    <div style="color:#1A2517; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px #1A2517; width: 300px; margin: 50px auto; text-align: center;">
+    <div style="background:linear-gradient(to right, #95d9b6, #f5eba1); color:#1A2517; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px #1A2517; width: 300px; margin: 50px auto; text-align: center;">
     <h1>Calculator in HTML</h1>
     <br><br>
     <label for="val1">Number 1 :</label>
@@ -72,7 +77,7 @@
     </select>
     <button onclick="Numadd()">Click to Calculate</button>
     <br><br>
-    <p style="background: #c6e4ba; color: red; padding: 10px 20px; border-radius: 10px; "id="result"> Result :</p>
+    <h2><p style="background: #c6e4ba; color: red; padding: 10px 20px; border-radius: 10px; "id="result"> Result :</p></h2>
     </div>
     <script>
         function Numadd(){
@@ -95,7 +100,7 @@
                     result = parseFloat(num1) * parseFloat(num2);
                     break;
                 case 'div':
-                    result = parseFloat(num1) / parseFloat(num2);
+                    result =( parseFloat(num1) / parseFloat(num2) ).toFixed(2);
                     break;
             }
             document.getElementById("result").innerHTML = "Result : " + result;
