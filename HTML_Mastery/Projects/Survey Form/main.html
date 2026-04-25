@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Survey Form</title>
+    <style>
+        body{
+            background-color: #FEFACD;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+        }
+        input{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        label{
+            font: 100% Verdana, Geneva, Tahoma, sans-serif;
+            display:flex
+        }
+        button{
+            padding: 10px 20px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        div{
+            margin-bottom: 15px;
+        }
+        select{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        select {
+            appearance: base-select;
+        }
+
+        option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 16px;
+            color: rgb(150, 121, 247);
+        }
+
+    </style>
+</head>
+<body>
+    <div style="text-align: center; padding: 20px; background-color: #937ac7; border: 2px solid black; border-radius: 10px; width: 50%; margin: auto;">
+    <h1>College Survey Form</h1>
+
+    <p>Thank you for taking the time to help us improve our services. Please fill out this survey form.</p>
+    <form>
+        <div>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your first name" required><br><br>
+        </div>
+
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+        </div>
+        <div>
+            <label for="USN">USN:</label>
+            <input type="text" id="USN" name="USN" placeholder="Enter your USN"><br><br>
+        </div>
+        <div>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="AIML">AIML</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+            </select>
+
+
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob"><br><br>
+            </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="------@acharya.ac.in" required><br><br>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX" required><br><br>
+        </div>
+
+        <button onclick="location.href='survey_form.html'" type="button" value="Next">Next</button>
+    </form>
+
+    
+    </div>
+</body>
+</html>

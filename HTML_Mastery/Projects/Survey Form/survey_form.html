@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+        <style>
+        body{
+            background-color: #FEFACD;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(0, 0, 0);
+        }
+        input{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        label{
+            font: 100% Verdana, Geneva, Tahoma, sans-serif;
+            display:flex
+        }
+        button{
+            padding: 10px 20px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        div{
+            margin-bottom: 15px;
+        }
+        select{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        select {
+            appearance: base-select;
+        }
+
+        option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 16px;
+            color: rgb(150, 121, 247);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">College Survey Form</h1>
+    <p style="text-align:center;">
+        Thank you for helping us improve. Please answer the following questions honestly.
+    </p>
+
+    <div style="text-align: left; padding: 20px; background-color: #937ac7; border: 2px solid black; border-radius: 10px; width: 60%; margin: auto; color: white;">
+
+    <form>
+
+        <h3>1. Course Satisfaction</h3>
+        <label>How satisfied are you with your current course?</label><br>
+        <input type="radio" name="course" required> Very Satisfied<br>
+        <input type="radio" name="course"> Satisfied<br>
+        <input type="radio" name="course"> Neutral<br>
+        <input type="radio" name="course"> Dissatisfied<br><br>
+
+        <h3>2. Teaching Quality</h3>
+        <label>How would you rate the teaching quality?</label><br>
+        <select required>
+            <option value="">Select</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select><br><br>
+
+        <h3>3. Faculty Support</h3>
+        <label>Are faculty members approachable for doubts?</label><br>
+        <input type="radio" name="faculty"> Yes<br>
+        <input type="radio" name="faculty"> Sometimes<br>
+        <input type="radio" name="faculty"> No<br><br>
+
+        <h3>4. Infrastructure</h3>
+        <label>Rate the college infrastructure (labs, classrooms, etc.)</label><br>
+        <input type="checkbox"> Excellent<br>
+        <input type="checkbox"> Good<br>
+        <input type="checkbox"> Needs Improvement<br><br>
+
+
+        <h3>5. Practical Learning</h3>
+        <label>Do you get enough practical exposure?</label><br>
+        <input type="radio" name="practical"> Yes<br>
+        <input type="radio" name="practical"> No<br><br>
+
+
+        <h3>6. Library Facilities</h3>
+        <label>How would you rate the library resources?</label><br>
+        <input type="radio" name="library"> Excellent<br>
+        <input type="radio" name="library"> Good<br>
+        <input type="radio" name="library"> Average<br>
+        <input type="radio" name="library"> Poor<br><br>
+
+        <h3>7. Campus Environment</h3>
+        <label>Is the campus environment comfortable for learning?</label><br>
+        <input type="radio" name="environment"> Yes<br>
+        <input type="radio" name="environment"> No<br><br>
+
+
+        <h3>8. Extracurricular Activities</h3>
+        <label>Are extracurricular activities sufficient?</label><br>
+        <input type="radio" name="extra"> Yes<br>
+        <input type="radio" name="extra"> No<br><br>
+
+    
+        <h3>9. Suggestions</h3>
+        <label>What improvements would you like to see?</label><br>
+        <textarea rows="4" cols="50" placeholder="Enter your suggestions..."></textarea><br><br>
+
+        <div style="text-align:center;">
+            <button type="submit" style="padding:10px 20px; font-size:16px; border:none; border-radius:5px; background-color:black; color:white;">
+                Submit
+            </button>
+        </div>
+    </form>
+    </div>
+
+    <script>
+        //  add error message if user tries to submit without filling required fields
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            const requiredFields = form.querySelectorAll('[required]');
+            let allFilled = true;
+            requiredFields.forEach(function(field) {
+                if (!field.value) {
+                    allFilled = false;
+                }
+            });
+            if (!allFilled) {
+                event.preventDefault();
+                alert('Please fill in all required fields before submitting the form.');
+            }
+        });
+    </script>
+</body>
+</html>
