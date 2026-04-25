@@ -117,29 +117,12 @@
         <textarea rows="4" cols="50" placeholder="Enter your suggestions..."></textarea><br><br>
 
         <div style="text-align:center;">
-            <button type="submit" style="padding:10px 20px; font-size:16px; border:none; border-radius:5px; background-color:black; color:white;">
+            <button onclick="location.href='Thank.html'"  type="submit" style="padding:10px 20px; font-size:16px; border:none; border-radius:5px; background-color:black; color:white;">
                 Submit
             </button>
         </div>
     </form>
     </div>
 
-    <script>
-        //  add error message if user tries to submit without filling required fields
-        const form = document.querySelector('form');
-        form.addEventListener('submit', function(event) {
-            const requiredFields = form.querySelectorAll('[required]');
-            let allFilled = true;
-            requiredFields.forEach(function(field) {
-                if (!field.value) {
-                    allFilled = false;
-                }
-            });
-            if (!allFilled) {
-                event.preventDefault();
-                alert('Please fill in all required fields before submitting the form.');
-            }
-        });
-    </script>
 </body>
 </html>
