@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pixel Widget Dashboard</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  overflow: hidden;
+}
+
+/* Floating gradient blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+}
+
+.blob1 {
+  width: 400px;
+  height: 400px;
+  background: #4285F4;
+  top: -100px;
+  left: -100px;
+}
+
+.blob2 {
+  width: 350px;
+  height: 350px;
+  background: #34A853;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Dashboard grid */
+.dashboard {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  height: 100%;
+}
+
+/* Widget Card */
+.widget {
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.6);
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.widget:hover {
+  transform: translateY(-5px);
+}
+
+/* Clock Widget */
+.clock {
+  grid-column: span 2;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Weather Widget */
+.weather {
+  text-align: center;
+}
+
+.weather h2 {
+  font-size: 28px;
+}
+
+/* Search Widget */
+.search input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+/* Quick Apps */
+.apps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.app {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+/* Notes */
+.notes textarea {
+  width: 100%;
+  height: 80px;
+  border: none;
+  outline: none;
+  background: transparent;
+  resize: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<div class="dashboard">
+
+  <!-- Clock -->
+  <div class="widget clock" id="clock">00:00</div>
+
+  <!-- Weather -->
+  <div class="widget weather">
+    <h2>🌤️ 28°C</h2>
+    <p>Bangalore</p>
+  </div>
+
+  <!-- Search -->
+  <div class="widget search">
+    <input type="text" placeholder="Search..." />
+  </div>
+
+  <!-- Apps -->
+  <div class="widget apps">
+    <div class="app">📧</div>
+    <div class="app">📷</div>
+    <div class="app">🎵</div>
+    <div class="app">⚙️</div>
+  </div>
+
+  <!-- Notes -->
+  <div class="widget notes">
+    <textarea placeholder="Write notes..."></textarea>
+  </div>
+
+</div>
+
+<script>
+function updateClock() {
+  let now = new Date();
+  let time = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+  document.getElementById("clock").innerText = time;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+</body>
+</html>
