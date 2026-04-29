@@ -1,39 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<title>Google Style UI</title>
+
 <style>
-body {
+* {
   margin: 0;
-  background: black;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
   overflow: hidden;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
 }
 
-.dot {
+/* Floating Gradient Blobs */
+.blob {
   position: absolute;
-  width: 5px;
-  height: 5px;
-  background: white;
   border-radius: 50%;
-  animation: move 5s linear infinite;
+  filter: blur(120px);
+  opacity: 0.6;
+  animation: float 20s infinite ease-in-out;
 }
 
-@keyframes move {
-  from { transform: translateY(100vh); }
-  to { transform: translateY(-10vh); }
+.blob1 {
+  width: 400px;
+  height: 400px;
+  background: #4285F4;
+  top: -100px;
+  left: -100px;
 }
+
+.blob2 {
+  width: 350px;
+  height: 350px;
+  background: #EA4335;
+  bottom: -100px;
+  right: -100px;
+  animation-delay: 5s;
+}
+
+.blob3 {
+  width: 300px;
+  height: 300px;
+  background: #FBBC05;
+  top: 50%;
+  left: 60%;
+  animation-delay: 10s;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0px) }
+  50% { transform: translateY(-50px) }
+}
+
+/* Glass UI Card */
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.6);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Title */
+.card h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Search Box */
+.search {
+  margin-top: 20px;
+  display: flex;
+  border-radius: 50px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.search input {
+  border: none;
+  padding: 12px;
+  flex: 1;
+  outline: none;
+}
+
+.search button {
+  border: none;
+  padding: 12px 20px;
+  background: #4285F4;
+  color: white;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #3367d6;
+}
+
 </style>
 </head>
+
 <body>
 
-<script>
-for(let i=0;i<100;i++){
-  let dot = document.createElement("div");
-  dot.className="dot";
-  dot.style.left=Math.random()*100+"vw";
-  dot.style.animationDuration=(Math.random()*5+3)+"s";
-  document.body.appendChild(dot);
-}
-</script>
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<div class="card">
+  <h1>Welcome</h1>
+  <div class="search">
+    <input type="text" placeholder="Search Google UI..." />
+    <button>Go</button>
+  </div>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+}
+
+.dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(-10vh); }
+}
+</style>
+</head>
+<body>
+
+<script>
+for(let i=0;i<100;i++){
+  let dot = document.createElement("div");
+  dot.className="dot";
+  dot.style.left=Math.random()*100+"vw";
+  dot.style.animationDuration=(Math.random()*5+3)+"s";
+  document.body.appendChild(dot);
+}
+</script>
+
+</body>
+</html>
