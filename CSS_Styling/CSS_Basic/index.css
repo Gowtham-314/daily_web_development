@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(-90deg,yellow,green);
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 20px;
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+.Island{
+    margin: 20px;
+    padding: 1px;
+    border-radius: 20px;
+    background:radial-gradient(circle, white, lightblue);
+                                /*IN the top box for that header*/
+}
+.nav{
+    justify-content: right;
+    flex
+}
