@@ -63,3 +63,10 @@ img {
   font-weight: bold;
   color: black;
 }
+.website-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
