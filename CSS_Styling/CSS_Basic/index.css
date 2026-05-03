@@ -29,7 +29,7 @@ a:hover{
     margin: 20px;
     padding: 1px;
     border-radius: 20px;
-    background:radial-gradient(circle, white, lightblue);
+    background:radial-gradient(circle, white, rgb(133, 212, 238));
                                 /*IN the top box for that header*/
 }
 nav{
@@ -63,4 +63,11 @@ img {
     margin-left: 15px;
     margin-top: 0;
     float: left;
+}
+.home{
+    background: radial-gradient(circle, white, rgb(115, 192, 218));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
 }
