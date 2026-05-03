@@ -38,3 +38,28 @@ nav{
     margin: 20px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
+.logo{
+    width: 25px;
+    height: 25px;
+    border-radius: 40%;
+}
+img {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.image-container {
+  text-align: left;
+}
+img {
+  display: block;
+  margin-right: auto; 
+  margin-left: 0;
+}
+.website {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
