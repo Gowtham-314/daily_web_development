@@ -9,7 +9,7 @@ h1{
     text-align: center;
     padding: 20px;
 }
-p{
+.heading{
     color: rgb(0, 0, 0);
     font-size: 18px;
     line-height: 1.5;
@@ -56,17 +56,11 @@ img {
   margin-right: auto; 
   margin-left: 0;
 }
-.website {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-}
-.website-name {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-left: 15px;
+    margin-top: 0;
+    float: left;
 }
