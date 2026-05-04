@@ -1,0 +1,212 @@
+body{
+    font-family: 'Chela One', 'Chela One';
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font: 'Bungee';
+    font-size: 50px;
+}
+h2{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font: 'Bungee';
+    font-size: 40px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+.heading{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 20px;
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+.Island{
+    font-family: 'Chela One', 'Chela One';
+    text-align: right;
+    margin: 20px;
+    padding: 1px;
+    border-radius: 20px;
+    background:linear-gradient( to right, rgb(0, 0, 0), rgb(67, 72, 73));
+                                /*IN the top box for that header*/
+}
+nav{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    font-family: 'Chela One', 'Chela One';
+}
+.logo{
+    width: 25px;
+    height: 25px;
+    border-radius: 40%;
+}
+img {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.image-container {
+  text-align: left;
+}
+img {
+  display: block;
+  margin-right: auto; 
+  margin-left: 0;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-top: 0;
+    float: left;
+}
+.home{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(87, 99, 102));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+.about{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(78, 89, 92));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(73, 85, 89));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #222222;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #833ab4;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #cd201f;
+  color: #ffffff;
+}
