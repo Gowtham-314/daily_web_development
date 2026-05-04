@@ -1,22 +1,38 @@
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Chela One', 'Chela One';
     margin: 0;
     padding: 0;
-    background:linear-gradient(-90deg,yellow,green);
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
 }
 h1{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
+    font: 'Bungee';
+    font-size: 50px;
+}
+h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font: 'Bungee';
+    font-size: 40px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
 }
 .heading{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     line-height: 1.5;
     margin: 20px;
 }
 a{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 20px;
 }
@@ -24,19 +40,19 @@ a:hover{
     color: rgb(255, 0, 0);
 }
 .Island{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Chela One', 'Chela One';
     text-align: right;
     margin: 20px;
     padding: 1px;
     border-radius: 20px;
-    background:radial-gradient(circle, white, rgb(133, 212, 238));
+    background:linear-gradient( to right, rgb(0, 0, 0), rgb(67, 72, 73));
                                 /*IN the top box for that header*/
 }
 nav{
     padding: 10px;
     border-radius: 20px;
     margin: 20px;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Chela One', 'Chela One';
 }
 .logo{
     width: 25px;
@@ -59,25 +75,28 @@ img {
 .title{
     font-size: 20px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-left: 15px;
     margin-top: 0;
     float: left;
 }
 .home{
-    background: radial-gradient(circle, white, rgb(115, 192, 218));
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(87, 99, 102));
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
     
 }
-.home-image{
-    width: 200px;
-    height: 300px;
+.about{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(78, 89, 92));
     border-radius: 20px;
-    background: radial-gradient(circle, white, rgb(178, 222, 237));
+    padding: 20px;
+    margin: 20px;
 }
-.Peter{
-    text-align: left;
-    margin-bottom: 20px;
+
+.contact{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(73, 85, 89));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
 }
