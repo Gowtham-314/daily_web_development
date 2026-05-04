@@ -69,5 +69,15 @@ img {
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
-    text-align: center;
+    
+}
+.home-image{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    background: radial-gradient(circle, white, rgb(178, 222, 237));
+}
+.Peter{
+    text-align: left;
+    margin-bottom: 20px;
 }
