@@ -109,7 +109,10 @@ img {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-} 
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
 
 
 
