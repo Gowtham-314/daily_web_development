@@ -100,6 +100,24 @@ img {
     margin: 20px;
 }
 
+.contact-info{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(67, 72, 73));
+    border-radius: 20px;
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+} 
+
+
+
+
+
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
