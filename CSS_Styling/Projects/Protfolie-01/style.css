@@ -1,0 +1,174 @@
+body{
+    font-family: 'Chela One', 'Chela One';
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font: 'Bungee';
+    font-size: 50px;
+}
+h2{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font: 'Bungee';
+    font-size: 40px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+.heading{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 20px;
+    transition: color 0.3s ease;
+}
+a:hover {
+  color: #007BFF; /* Or any accent color you prefer */
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+.Island{
+    font-family: 'Chela One', 'Chela One';
+    text-align: right;
+    margin: 20px;
+    padding: 1px;
+    border-radius: 20px;
+    background:linear-gradient( to right, rgb(0, 0, 0), rgb(67, 72, 73));
+                                /*IN the top box for that header*/
+}
+nav{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    font-family: 'Chela One', 'Chela One';
+}
+.logo{
+    width: 25px;
+    height: 25px;
+    border-radius: 40%;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-top: 0;
+    float: left;
+}
+.home{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(87, 99, 102));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+.about{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(78, 89, 92));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(73, 85, 89));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(37, 43, 47);
+    border-radius: 20px;
+}
+
+.instagram{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(37, 43, 47);
+    border-radius: 20px;
+}
+.linkedin{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(37, 43, 47);
+    border-radius: 20px;
+}
+.github{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(37, 43, 47);
+    border-radius: 20px;
+}
+.x{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(37, 43, 47);
+    border-radius: 20px;
+}
+
+.project-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.project-item{
+    background-color: rgb(37, 43, 47);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.projects{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(68, 80, 86));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(37, 43, 47);
+    color: rgb(255, 255, 255);
+}
+.name{
+    text-shadow: 4px 4px 5px rgba(255, 0, 0, 0.5), -4px -4px 5px rgba(208, 255, 0, 0.5);
+
+}
