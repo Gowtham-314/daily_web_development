@@ -34,6 +34,10 @@ a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 20px;
+    transition: color 0.3s ease;
+}
+a:hover {
+  color: #007BFF; /* Or any accent color you prefer */
 }
 a:hover{
     color: rgb(255, 0, 0);
@@ -57,19 +61,6 @@ nav{
     width: 25px;
     height: 25px;
     border-radius: 40%;
-}
-img {
-  float: left;
-  margin-right: 15px;
-  margin-bottom: 10px;
-}
-.image-container {
-  text-align: left;
-}
-img {
-  display: block;
-  margin-right: auto; 
-  margin-left: 0;
 }
 .title{
     font-size: 20px;
@@ -145,4 +136,29 @@ img {
     gap: 10px;
     background-color: rgb(37, 43, 47);
     border-radius: 20px;
+}
+
+.project-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.project-item{
+    background-color: rgb(37, 43, 47);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.projects{
+    background: linear-gradient( to right, rgb(0, 0, 0), rgb(68, 80, 86));
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-bottom: 10px;
 }
