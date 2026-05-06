@@ -162,3 +162,9 @@ h3{
     font-size: 24px;
     margin-bottom: 10px;
 }
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(37, 43, 47);
+    color: rgb(255, 255, 255);
+}
