@@ -24,9 +24,10 @@ h2{
 div{
     background: linear-gradient(90deg, #58b08e, #cde2db);
     border-radius: 20px;
-    padding: 20px;
+    padding: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 600px;
+    max-height: 600px;
     margin: 0 auto;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
