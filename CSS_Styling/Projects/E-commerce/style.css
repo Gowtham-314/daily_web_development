@@ -2,5 +2,13 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background:linear-gradient(to right, #a1bedb, #e9ecef);
+    background-image: linear-gradient(to right, #FDFCFB, #E2D1C3);
+}
+
+header {
+    border-radius: 0 0 20px 20px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
