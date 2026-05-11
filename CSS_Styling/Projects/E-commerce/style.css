@@ -6,9 +6,51 @@ body{
 }
 
 header {
-    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 20px;
     background-color: #333;
     color: white;
+    margin: 20px;
     padding: 20px;
-    text-align: center;
+    flex-wrap: wrap;
+}
+h1{
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.2;
+    flex: 0 0 auto;
+}
+.search-bar{
+    flex: 1 1 240px;
+}
+
+.search-bar input{
+    width: 100%;
+    max-width: 320px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.menu p{
+    margin: 0;
+}
+
+.menu ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
