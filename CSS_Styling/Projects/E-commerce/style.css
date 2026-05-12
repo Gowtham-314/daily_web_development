@@ -40,23 +40,21 @@ h1{
     margin: 0;
 }
 
-.menu ul{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
 .menu a{
     color: white;
     text-decoration: none;
     font-size: 16px;
+    margin: 0 10px;
+    transition: color 0.18s ease;
+    
+}
+.menu a:hover{
+    color: #d74e4e;
+
 }
 
-.Home{
-    background-color: #4CAF50;
+.Home {
+    background:linear-gradient(to right, #4CAF50, #45a049);
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -74,6 +72,11 @@ h1{
     justify-content: center;
     border-radius: 12px;
     margin: 20px;
+}
+
+.banner-item{
+    color: white;
+
 }
 
 
@@ -132,7 +135,7 @@ h1{
 }
 
 .buy-btn:hover{
-    background: #ff9b5e;
+    background: #dce440;
 }
 
 .description{
@@ -151,4 +154,79 @@ footer{
     margin: 20px;
     padding: 20px;
     flex-wrap: wrap;
+}
+
+.social-links a{
+    background-color:  #4CAF50;;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+
+}
+.social-links a:hover{
+    background-color: #ca2525;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+
+.Contact{
+    background:linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form input, form textarea{
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+label{
+    font-weight: 700;
+    color: #333;
+}
+
+button[type="submit"]{
+    padding: 10px 12px;
+    background-color: #71b373;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button[type="submit"]:hover{
+    background-color: #ca2525;
+}
+
+.About{
+    background:linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.about-content{
+    max-width: 600px;
+    margin: 20px auto;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+
 }

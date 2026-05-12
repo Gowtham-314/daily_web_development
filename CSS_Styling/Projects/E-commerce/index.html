@@ -13,56 +13,63 @@
             <input type="text" placeholder="Search products...">
         </div>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <a href="#" onclick="showPage('products')">Products</a>
+            <a href="#" onclick="showPage('about')">About Us</a>
+            <a href="#" onclick="showPage('contact')">Contact</a>
         </nav>
+
     </header>
+
+    <!-- Main content area -->
     <div id="Home" class="Home">
         <h2 style="text-align: center; color: rgb(0, 0, 0);">Electro Store</h2>
         <div class="banner">
-            <p>Welcome to Electro Store, your one-stop shop for all things electronic! We offer a wide range of products, from the latest smartphones and laptops to home appliances and gaming consoles. Our mission is to provide high-quality electronics at competitive prices, along with exceptional customer service. Whether you're a tech enthusiast or just looking for the perfect gadget, we've got you covered. Explore our collection and find the perfect device to suit your needs!</p>
+            <div style="text-align: center;">
+                <h3>Latest Gadgets</h3>
+                <p>Discover the newest tech products in our store ,</p>
+            </div>
+            <div>
+                <h3>Special Offers</h3>
+                <p> Check out our limited-time deals and discounts.</p>
+            </div>
         </div>
         <div style="text-align: center; font-size: 24px; margin: 20px;">Apple Products</div>
 
         <div class="products-grid">
             <div class="product-card">
-                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTOu134mmIuG0-URJ6tNYXoHk4AVSf9pOcXDLtOK_jVeVVElV2auO9zbDpuOAjna3mnLtvsKXhkXIuewoaNFmPS3pg0zVXbl8nm6X_iODZ9SRhLkpsjKbLJKQ" alt="Iphone 17">
+                <img src="https://www.apple.com/v/iphone-17-pro/e/images/overview/cameras/pro-video/prores__mg5ug8qfvmqi_large_2x.jpg" alt="iPhone 17 Pro">
                 <div>
-                    <h2>Iphone 17</h2>
+                    <h2>iPhone 17 Pro</h2>
                     <div class="description">
                         <ul>
-                            <li>6.5-inch OLED display</li>
-                            <li>A15 Bionic chip</li>
-                            <li>Triple-lens camera system</li>
+                            <li>6.7-inch Super Retina XDR display</li>
+                            <li>A17 Bionic chip</li>
+                            <li>ProMotion technology</li>
                             <li>5G connectivity</li>
                         </ul>
                         <p class="price">$999.99</p>
-                        <button class="buy-btn">Buy Now</button>
+                        <button class="buy-btn"><a href="https://www.apple.com/in/iphone-17-pro/" style="color: white; text-decoration: none;" target="_blank">Buy Now</a></button>
                     </div>
                 </div>
             </div>
             <div class="product-card">
                 <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQbJVwo-YUgGtfCZDhYTKhwg9X8zApQBrOsneftdTYLRdBW4jsxGC3B83lJZOBKuL4VaQHmfEiHZG7TIBqsnlzG1UAcUPJUWw" alt="Laptop Pro">
                 <div>
-                    <h2>MacBook Pro</h2>
+                    <h2>MacBook Air</h2>
                     <div class="description">
                         <ul>
-                            <li>16-inch Liquid Retina XDR display</li>
-                            <li>Apple M4 Pro chip</li>
-                            <li>16GB RAM</li>
+                            <li>13.6-inch Liquid Retina display</li>
+                            <li>Apple M2 chip</li>
+                            <li>8GB RAM</li>
                             <li>512GB SSD</li>
                         </ul>
                         <p class="price">$1499.99</p>
-                        <button class="buy-btn">Buy Now</button>
+                        <button class="buy-btn"><a href="https://www.apple.com/in/macbook-air/" style="color: white; text-decoration: none;" target="_blank">Buy Now</a></button>
                     </div>
                 </div>
             </div>
             <div class="product-card">
-                <img src="https://sell.gameloot.in/wp-content/uploads/sites/4/2022/09/Apple-Mac-Mini.jpg" alt="Mac Mini">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh285MBMBq_gGwx6-gpABNwf2GG3wv6CFbjw&s" alt="Mac Mini">
                 <div>
                     <h2>Mac Mini</h2>
                     <div class="description">
@@ -72,28 +79,28 @@
                             <li>256GB SSD</li>
                         </ul>
                         <p class="price">$299.99</p>
-                        <button class="buy-btn">Buy Now</button>
+                        <button class="buy-btn"><a href="https://www.apple.com/in/mac-mini/" style="color: white; text-decoration: none;" target="_blank">Buy Now</a></button>
                     </div>
                 </div>
             </div>
         </div>  
 
-    <div style="text-align: center; font-size: 24px; margin: 20px;">Android Products</div>
+        <div style="text-align: center; font-size: 24px; margin: 20px;">Android Products</div>
 
-    <div class="products-grid">
+        <div class="products-grid">
             <div class="product-card">
-                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR2s1COeVa3JJlpGgB0a84yvcFQUB32iyCBMiIMJX-vTMQHw3m-eYu1iTbGYyHtcq_OgyGVamixieiEwuceyJdaGyv66VGOO6WNPY8eiJ2IhNHm_voAUmiVpJuRsv6vd7CtKbQUDsU&usqp=CAc" alt="Iphone 17">
+                <img src="data:image/jpeg;base64,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" alt="Iphone 17">
                 <div>
-                    <h2>Pixel 10</h2>
+                    <h2>Pixel 10 Pro</h2>
                     <div class="description">
                         <ul>
-                            <li>6.5-inch OLED display</li>
-                            <li>A15 Bionic chip</li>
-                            <li>Triple-lens camera system</li>
+                            <li>6.7-inch LTPO OLED display</li>
+                            <li>Google Tensor G3 chip</li>
+                            <li>120Hz refresh rate</li>
                             <li>5G connectivity</li>
                         </ul>
                         <p class="price">$999.99</p>
-                        <button class="buy-btn">Buy Now</button>
+                        <button class="buy-btn"><a href="https://store.google.com/in/product/pixel_10_pro?hl=en-IN" style="color: white; text-decoration: none;" target='_blank'>Buy Now</a></button>
                     </div>
                 </div>
             </div>
@@ -104,12 +111,14 @@
                     <div class="description">
                         <ul>
                             <li>Sport Band</li>
-                            <li>A15 Bionic chip</li>
+                            <li>Google Tensor G3 chip</li>
                             <li>Gemini Intelligence</li>
                             <li>5G connectivity</li>
                         </ul>
                         <p class="price">$1499.99</p>
-                        <button class="buy-btn">Buy Now</button>
+                        <button class="buy-btn">
+                            <a href="https://store.google.com/in/product/pixel_watch_4?hl=en-IN" style="color: white; text-decoration: none;" target="_blank">Buy Now</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -125,22 +134,71 @@
                             <li>Google Assistant built-in</li>
                         </ul>
                         <p class="price">$299.99</p>
-                        <button class="buy-btn">Buy Now</button>
+                        <button class="buy-btn">
+                            <a href="https://store.google.com/in/product/pixel_buds_pro_2?hl=en-IN" style="color: white; text-decoration: none;" target="_blank">Buy Now</a>
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>  
-
-    <div style="text-align: center; font-size: 24px; margin: 20px;">Android Products</div>
-
-
-
-
-
+        </div> 
     </div>
+    <!-- End of main content area -->
+
+
+
+    <!--About Us-->
+    <div id="About" class="About">
+        <h1 style="text-align: center; color: rgb(255, 255, 255);">About Us</h1>
+        <p style="text-align: center; color: rgb(255, 255, 255);">Welcome to Electro Store</p>
+        <!----Point-wise explainations----->
+        <div class="about-content" style="max-width: 600px; margin: 0 auto;">
+            <ul style="color: rgb(255, 255, 255);">
+                <li>We are a leading online retailer specializing in the latest electronic gadgets and accessories.</li>
+                <li>Our mission is to provide customers with high-quality products at competitive prices, along with exceptional customer service.</li>
+                <li>We offer a wide range of products, including smartphones, laptops, smartwatches, and more from top brands.</li>
+                <li>Our team is dedicated to ensuring a seamless shopping experience, from browsing to delivery.</li>
+                <li>We value our customers and strive to exceed their expectations with every purchase.</li>
+            </ul>
+        </div>
+    </div>
+    <!--End of About Us-->
+
+    <!--Contact Us-->
+    <div id="Contact" class="Contact">
+        <h2 style="text-align: center; color: rgb(255, 255, 255);">Contact Us</h2>
+        <p style="text-align: center; color: rgb(255, 255, 255);">Have questions or need assistance? Reach out to us!</p>
+        <form style="max-width: 400px; margin: 0 auto;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!--End of Contact Us-->
+
+
+
+
+
+
+
+
+
+    
     <footer
         style="text-align: center; padding: 20px; background-color: #333; color: white;">
         <p>&copy; 2026 Electro Store. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Gowtham-314" style="color: white; margin: 0 10px;" target="_blank">GitHub</a>
+            <a href="mailto:gowdagowtham7930@gmail.com" style="color: white; margin: 0 10px;" target="_blank">Email</a>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
