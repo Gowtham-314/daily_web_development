@@ -69,25 +69,29 @@ h1{
     text-align: center;
     padding-left: 20px;
     background-color: #2c4f2d;
-    display: default;
+    display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: 12px;
     margin: 20px;
 }
 
 .products{
     display: flex;
-    background-color:  #2c4f2d;;
+    background-color: #2c4f2d;
     margin: 20px;
     padding: 20px;
     border-radius: 12px;
-    text-align: center
-    ;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-img{
-    width: 300px;
-    height: 400px;
+.products img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 12px;
+    object-fit: cover;
 }
 
 .description{
