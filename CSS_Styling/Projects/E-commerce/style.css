@@ -63,6 +63,9 @@ h1{
     margin: 20px;
 }
 
-.Home ::hover{
-    background-color: #b5cab6;
+.Home :hover{
+    background-color: #2c4f2d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
 }
