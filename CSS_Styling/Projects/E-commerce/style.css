@@ -65,7 +65,6 @@ h1{
 
 
 .banner{
-    gap: 20px;
     height: 100px;
     text-align: center;
     padding-left: 20px;
@@ -82,10 +81,16 @@ h1{
     margin: 20px;
     padding: 20px;
     border-radius: 12px;
-    text-align: linear;
+    text-align: center
+    ;
 }
 img{
-    width: 400px;
-    height: 600px;
+    width: 300px;
+    height: 400px;
     border-radius: 12px;
+}
+
+.description{
+    text-align: left;
+    margin-left: 20px;
 }
