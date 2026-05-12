@@ -63,9 +63,20 @@ h1{
     margin: 20px;
 }
 
-.Home :hover{
+
+.banner{
     background-color: #2c4f2d;
-    padding: 10px 20px;
-    border-radius: 20px;
+    display: flex;
+    display: default;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.products{
+    display: flex;
+    background-color:  #2c4f2d;;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 20px;
 }
