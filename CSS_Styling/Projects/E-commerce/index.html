@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Electro store</title>
+    <title>Electro Store</title>
 </head>
 <body>
     <header>
-        <h1>Electro store</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Search products...">
-        </div>
+        <h1><span class="store-name">Electro Store</span></h1>
         <nav class="menu">
-            <a href="#" onclick="showPage('products')">Products</a>
-            <a href="#" onclick="showPage('about')">About Us</a>
-            <a href="#" onclick="showPage('contact')">Contact</a>
+            <a href="products.html">Products</a>
+            <a href="#About" onclick="showPage('about')">About Us</a>
+            <a href="#Contact" onclick="showPage('contact')">Contact</a>
         </nav>
 
     </header>
@@ -148,26 +145,32 @@
 
     <!--About Us-->
     <div id="About" class="About">
-        <h1 style="text-align: center; color: rgb(255, 255, 255);">About Us</h1>
-        <p style="text-align: center; color: rgb(255, 255, 255);">Welcome to Electro Store</p>
-        <!----Point-wise explainations----->
-        <div class="about-content" style="max-width: 600px; margin: 0 auto;">
-            <ul style="color: rgb(255, 255, 255);">
-                <li>We are a leading online retailer specializing in the latest electronic gadgets and accessories.</li>
-                <li>Our mission is to provide customers with high-quality products at competitive prices, along with exceptional customer service.</li>
-                <li>We offer a wide range of products, including smartphones, laptops, smartwatches, and more from top brands.</li>
-                <li>Our team is dedicated to ensuring a seamless shopping experience, from browsing to delivery.</li>
-                <li>We value our customers and strive to exceed their expectations with every purchase.</li>
+        <h1>About Us</h1>
+        <p>Welcome to Electro Store</p>
+        <div class="about-content">
+            <p>
+                Electro Store is your trusted destination for premium electronics, smart gadgets,
+                and everyday tech essentials. We bring together top brands, quality products,
+                and reliable customer support in one place.
+            </p>
+            <ul>
+                <li>Latest smartphones, laptops, wearables, and accessories.</li>
+                <li>Carefully selected products with genuine pricing.</li>
+                <li>Simple shopping experience with quick support.</li>
+                <li>Regular offers and updates on trending technology.</li>
             </ul>
+            <p>
+                Our goal is to make technology easy to discover, compare, and buy for everyone.
+            </p>
         </div>
     </div>
     <!--End of About Us-->
 
     <!--Contact Us-->
     <div id="Contact" class="Contact">
-        <h2 style="text-align: center; color: rgb(255, 255, 255);">Contact Us</h2>
-        <p style="text-align: center; color: rgb(255, 255, 255);">Have questions or need assistance? Reach out to us!</p>
-        <form style="max-width: 400px; margin: 0 auto;">
+        <h2 style="background-color: #333; padding: 10px; border-radius: 16px;">Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us!</p>
+        <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 

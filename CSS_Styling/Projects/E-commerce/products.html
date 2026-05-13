@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <title>Electro Store</title>
+</head>
+<body>
+    <header>
+        <h1><span class="store-name">Electro Store</span></h1>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="#About" onclick="showPage('about')">About Us</a>
+            <a href="#Contact" onclick="showPage('contact')">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="products" class="products-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search gadgets...">
+            </div>
+            <p><div class="product-line">
+                <nav class="chips-nav">
+                    <button class="chip active" data-cat="all">All</button>
+                    <button class="chip" data-cat="phone">Phones</button>
+                    <button class="chip" data-cat="laptop">Laptops</button>
+                    <button class="chip" data-cat="audio">Audio</button>
+                    <button class="chip" data-cat="wearable">Wearables</button>
+                    <button class="chip" data-cat="gaming">Gaming</button>
+                    <button class="chip" data-cat="accessory">Accessories</button>
+                    <button class="chip" data-cat="camera">Cameras</button>
+                </nav>
+            </div></p>
+
+            <div class="products-grid" id="productsGrid">
+                <div class="product-card" data-cat="phone">
+                
+            </div>
+
+
+
+
+        </section>
+
+    </main>
+    
+
+
+
+    <footer
+        style="text-align: center; padding: 20px; background-color: #333; color: white;">
+        <p>&copy; 2026 Electro Store. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Gowtham-314" style="color: white; margin: 0 10px;" target="_blank">GitHub</a>
+            <a href="mailto:gowdagowtham7930@gmail.com" style="color: white; margin: 0 10px;" target="_blank">Email</a>
+        </div>
+    </footer>
+    <script src="products.js"></script>
+
+</body>
+</html> 

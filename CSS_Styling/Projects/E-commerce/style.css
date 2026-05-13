@@ -23,18 +23,6 @@ h1{
     line-height: 1.2;
     flex: 0 0 auto;
 }
-.search-bar{
-    flex: 1 1 240px;
-}
-
-.search-bar input{
-    width: 100%;
-    max-width: 320px;
-    padding: 10px 12px;
-    border: none;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
 
 .menu p{
     margin: 0;
@@ -49,8 +37,9 @@ h1{
     
 }
 .menu a:hover{
-    color: #d74e4e;
-
+    background: linear-gradient(-135deg, #ff0000, #00ff11, #008cff, #d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .Home {
@@ -178,7 +167,9 @@ footer{
     padding: 10px 20px;
     border-radius: 20px;
     margin: 20px;
+    text-align: left;
 }
+
 
 form{
     display: flex;
@@ -215,18 +206,62 @@ button[type="submit"]:hover{
 }
 
 .About{
-    background:linear-gradient(to right, #4CAF50, #45a049);
+    background: linear-gradient(135deg, #2f7f39, #4CAF50 55%, #69c06f);
     color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 24px;
+    border-radius: 22px;
     margin: 20px;
+    text-align: left;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
 }
+
+.About h1,
+.About > p{
+    text-align: center;
+}
+
+.About h1{
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.About > p{
+    opacity: 0.95;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
 .about-content{
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 1000px;
+    margin: 20px auto 8px;
     color: #ffffff;
     font-size: 18px;
     line-height: 1.6;
     text-align: left;
+    background-color: #2c4f2c;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 14px;
+    padding: 18px 20px;
 
+}
+
+.about-content ul{
+    margin: 10px 0;
+    padding-left: 24px;
+}
+
+.about-content li{
+    margin-bottom: 8px;
+}
+
+.about-content p{
+    margin: 0 0 10px;
+}
+
+.store-name {
+    background: linear-gradient(135deg, #4285f4 0%, #34a853 50%, #fbbc05 80%, #ea4335 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
