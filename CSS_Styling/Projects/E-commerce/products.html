@@ -11,33 +11,101 @@
         <h1><span class="store-name">Electro Store</span></h1>
         <nav class="menu">
             <a href="index.html">Home</a>
-            <a href="#About" onclick="showPage('about')">About Us</a>
-            <a href="#Contact" onclick="showPage('contact')">Contact</a>
+            <a href="index.html#About">About Us</a>
+            <a href="index.html#Contact">Contact</a>
         </nav>
 
     </header>
 
     <main>
         <section id="products" class="products-section">
+            <div class="section-heading">
+                <p class="eyebrow">Browse the catalog</p>
+                <h2>Shop gadgets by Category</h2>
+            </div>
+
             <div class="search-bar">
                 <input type="text" id="searchInput" placeholder="Search gadgets...">
             </div>
-            <p><div class="product-line">
-                <nav class="chips-nav">
-                    <button class="chip active" data-cat="all">All</button>
-                    <button class="chip" data-cat="phone">Phones</button>
-                    <button class="chip" data-cat="laptop">Laptops</button>
-                    <button class="chip" data-cat="audio">Audio</button>
-                    <button class="chip" data-cat="wearable">Wearables</button>
-                    <button class="chip" data-cat="gaming">Gaming</button>
-                    <button class="chip" data-cat="accessory">Accessories</button>
-                    <button class="chip" data-cat="camera">Cameras</button>
-                </nav>
-            </div></p>
+            <nav class="chips-nav" aria-label="Product categories">
+                <button class="chip active" data-cat="all">All</button>
+                <button class="chip" data-cat="phone">Phones</button>
+                <button class="chip" data-cat="laptop">Laptops</button>
+                <button class="chip" data-cat="audio">Audio</button>
+                <button class="chip" data-cat="wearable">Wearables</button>
+                <button class="chip" data-cat="gaming">Gaming</button>
+                <button class="chip" data-cat="accessory">Accessories</button>
+                <button class="chip" data-cat="camera">Cameras</button>
+            </nav>
 
             <div class="products-grid" id="productsGrid">
-                <div class="product-card" data-cat="phone">
-                
+                <article class="product-card" data-cat="phone" data-search="iphone 17 pro flagship smartphone">
+                    <img src="https://www.apple.com/v/iphone-17-pro/e/images/overview/cameras/pro-video/prores__mg5ug8qfvmqi_large_2x.jpg" alt="iPhone 17 Pro">
+                    <div>
+                        <h3>iPhone 17 Pro</h3>
+                        <div class="description">
+                            <ul>
+                                <li>6.7-inch Super Retina XDR display</li>
+                                <li>A17 Bionic chip</li>
+                                <li>ProMotion technology</li>
+                                <li>5G connectivity</li>
+                            </ul>
+                            <p class="price">$999.99</p>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="laptop" data-search="macbook air laptop m2">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQbJVwo-YUgGtfCZDhYTKhwg9X8zApQBrOsneftdTYLRdBW4jsxGC3B83lJZOBKuL4VaQHmfEiHZG7TIBqsnlzG1UAcUPJUWw" alt="MacBook Air">
+                    <div>
+                        <h3>MacBook Air</h3>
+                        <div class="description">
+                            <ul>
+                                <li>13.6-inch Liquid Retina display</li>
+                                <li>Apple M2 chip</li>
+                                <li>8GB RAM</li>
+                                <li>512GB SSD</li>
+                            </ul>
+                            <p class="price">$1499.99</p>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="audio" data-search="pixel buds pro 2 audio earbuds">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh285MBMBq_gGwx6-gpABNwf2GG3wv6CFbjw&s" alt="Pixel Buds Pro 2">
+                    <div>
+                        <h3>Pixel Buds Pro 2</h3>
+                        <div class="description">
+                            <ul>
+                                <li>Active noise cancellation</li>
+                                <li>Up to 11 hours battery life</li>
+                                <li>IPX4 water resistance</li>
+                                <li>Google Assistant built-in</li>
+                            </ul>
+                            <p class="price">$299.99</p>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="wearable" data-search="pixel watch 4 wearable smartwatch">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTQ0g_FXL6CznnNxea8fZRD7uD4kllpSn5N8p2-VhjQTBh4gMSdyUPGo-a-dRD1hm09YfGJitnuxxJUCUsxitnBeKMemm2rvrvUFQMdHBl1FaM2vqiZDr_G1amh6JTSfyLGAzRlQQED&usqp=CAc" alt="Pixel Watch 4">
+                    <div>
+                        <h3>Pixel Watch 4</h3>
+                        <div class="description">
+                            <ul>
+                                <li>Sport band included</li>
+                                <li>Gemini intelligence</li>
+                                <li>5G connectivity</li>
+                                <li>Always-on display</li>
+                            </ul>
+                            <p class="price">$499.99</p>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </article>
             </div>
 
 
@@ -58,7 +126,7 @@
             <a href="mailto:gowdagowtham7930@gmail.com" style="color: white; margin: 0 10px;" target="_blank">Email</a>
         </div>
     </footer>
-    <script src="products.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html> 
