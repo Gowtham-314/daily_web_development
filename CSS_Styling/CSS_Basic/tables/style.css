@@ -11,13 +11,13 @@ body {
 form {
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 18px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 input[type="number"] {
     padding: 10px;
     width: 100px;
-    border-radius: 5px;
+    border-radius: 18px;
     border: 1px solid #ccc;
 }
 button {
@@ -31,11 +31,21 @@ button {
 button:hover {
     background-color: #45a049;
 }
-tableshow {
+
+.tableshow {
     background-color: #8de7c2;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px #8de7c2;
     text-align: center;
     border-radius: 20px;
+}
+
+.tablebox {
+    background: linear-gradient(to bottom, #8de7c2, #4CAF50);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
 }

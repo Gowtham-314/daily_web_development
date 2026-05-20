@@ -14,14 +14,20 @@
         <input type="number" id="number" name="number" required>
         <button type="submit">Print Tables</button>
     </form>
-    <div class="tableshow" id="tablesOutput"></div>
+
+    <div class="tablebox">
+        <div id="tablesOutput"></div>
+    </div>  
+
+
+
     <script>
         document.getElementById('tablesForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const number = parseInt(document.getElementById('number').value);
             let output = '';
             for (let i = 1; i <= 10; i++) {
-                output += `${number} X ${i} = ${number * i}<br>`;
+                output += `<b>${number} X ${i} = ${number * i}</b><br>`;
             }
             document.getElementById('tablesOutput').innerHTML = output;
         });
