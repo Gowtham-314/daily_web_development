@@ -21,7 +21,7 @@ h2{
     margin-top: 30px;
 }
 
-div{
+.start{
     background: linear-gradient(90deg, #58b08e, #cde2db);
     border-radius: 20px;
     padding: 50px;
@@ -40,4 +40,18 @@ div:hover{
 div:hover{
     animation: shake 0.5s;
     background-color: #58b08e;
+}
+
+.nav{
+    justify-content: flex-end;
+    background: linear-gradient(90deg, #b08158, #cde2db);
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2);
 }
