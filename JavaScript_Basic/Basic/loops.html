@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Loops in JavaScript
+
+// For Loop
+for (let i = 0; i < 5; i++) {
+    console.log("For Loop iteration: " + i);
+}
+
+// While Loop
+let j = 0;
+while (j < 5) {
+    console.log("While Loop iteration: " + j);
+    j++;
+}
+// Do-While Loop
+let k = 0;
+do {
+    console.log("Do-While Loop iteration: " + k);
+    k++;
+} while (k < 5);
+
+// For...of Loop (for iterating over iterable objects)
+const array = ['a', 'b', 'c'];
+for (const element of array) {
+    console.log("For...of Loop element: " + element);
+}
+// For...in Loop (for iterating over object properties)
+const obj = { name: "Alice", age: 30, city: "New York" };
+for (const key in obj) {
+    console.log("For...in Loop key: " + key + ", value: " + obj[key]);
+}
+    </script>
+</body>
+</html>
